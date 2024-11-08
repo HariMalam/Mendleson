@@ -3,7 +3,7 @@
 ![Main Screenshot](./screenshot/main.png)
 
 ## 🌐 Live Demo
-Check out the live demo [here](https://your-demo-link.com).
+Check out the live demo [here](https://harimalam.github.io/Mendleson/dist).
 
 ## 📖 Overview
 This is a responsive, modern one-page business website template designed with XHTML, SCSS, and JavaScript. It includes sections like Home, About, Services, Projects, Clients, Team, and Contact.

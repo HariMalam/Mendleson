@@ -1,7 +1,6 @@
 main {
     #about {
         margin: 4.18rem 0;
-        padding: 0 8.125rem;
 
         .head {
             margin-bottom: 1.875rem;
@@ -12,7 +11,8 @@ main {
             }
 
             .obj2 {
-                width: 50%;
+                max-width: 41.125rem;
+                padding: 1rem;
                 width: fit-content;
 
                 h1 {
@@ -43,23 +43,24 @@ main {
             }
         }
 
-        .img {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                width: 38.25rem;
-            }
-        }
-
         .main {
             display: flex;
-            justify-content: space-between;
+
+            .img {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                img {
+                    max-width: 100%;
+                    padding: 1rem;
+                }
+            }
 
             .content {
-                width: 50%;
+                max-width: 41.125rem;
+                padding: 1rem;
 
                 p {
                     font-size: 1.25rem;

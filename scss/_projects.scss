@@ -40,7 +40,8 @@ main {
 
         .main {
             display: flex;
-            padding: 1.6875rem 14.6875rem;
+            padding: 1.6875rem 2.5rem;
+            max-width: calc(1920px - 26rem);
 
             .sub1 {
                 width: 50%;

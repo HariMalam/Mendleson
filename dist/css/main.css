@@ -51,38 +51,41 @@ header nav ul li a {
   color: black;
 }
 
+main {
+  padding: 1rem;
+}
 main #home {
-  justify-content: space-between;
+  justify-content: space-around;
   height: calc(100vh - 7rem);
   max-height: 800px;
   display: flex;
+  padding: 0 4rem;
 }
 main #home .img {
-  width: 40.1875rem;
-  margin-left: 10.6875rem;
+  width: 50%;
   height: auto;
   align-self: flex-end;
-  justify-self: end;
+}
+main #home .img img {
+  max-width: 100%;
 }
 main #home .content {
   margin-top: 10.0625rem;
-  margin-right: 16.4375rem;
 }
 main #home .content h1 {
-  width: 28.6875rem;
+  max-width: 28.6875rem;
   font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 1.5625rem;
 }
 main #home .content p {
-  width: 34rem;
+  max-width: 34rem;
   font-size: 1.25rem;
   margin-bottom: 1.875rem;
 }
 
 main #about {
   margin: 4.18rem 0;
-  padding: 0 8.125rem;
 }
 main #about .head {
   margin-bottom: 1.875rem;
@@ -92,7 +95,8 @@ main #about .head .obj1 {
   width: 50%;
 }
 main #about .head .obj2 {
-  width: 50%;
+  max-width: 41.125rem;
+  padding: 1rem;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -118,21 +122,22 @@ main #about .head .obj2 .line .two {
   position: absolute;
   background-color: #A9A9A9;
 }
-main #about .img {
+main #about .main {
+  display: flex;
+}
+main #about .main .img {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main #about .img img {
-  width: 38.25rem;
-}
-main #about .main {
-  display: flex;
-  justify-content: space-between;
+main #about .main .img img {
+  max-width: 100%;
+  padding: 1rem;
 }
 main #about .main .content {
-  width: 50%;
+  max-width: 41.125rem;
+  padding: 1rem;
 }
 main #about .main .content p {
   font-size: 1.25rem;
@@ -195,13 +200,13 @@ main #services .head .line .two {
   background-color: #A9A9A9;
 }
 main #services .main {
-  margin: 50px 13.75rem;
+  margin: 50px auto;
 }
 main #services .main .service {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4.8rem;
+  padding: 0 2.5rem;
   gap: 18rem;
 }
 main #services .main .service:nth-child(even) {
@@ -225,6 +230,9 @@ main #services .main .service .content p {
   line-height: 1.5;
   color: #2C2C2C;
 }
+main #services .main .service .img {
+  width: 100%;
+}
 main #services .main .service .img img {
   max-width: 100%;
   height: auto;
@@ -235,7 +243,7 @@ main #team {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 11.375rem;
+  margin-top: 10rem;
 }
 main #team .head {
   display: flex;
@@ -266,9 +274,9 @@ main #team .head .line .two {
 }
 main #team .main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
-  padding: 1.93rem 15.25rem;
+  padding: 1.93rem 0rem;
 }
 main #team .main .member {
   display: flex;
@@ -319,7 +327,8 @@ main #projects .head .line .two {
 }
 main #projects .main {
   display: flex;
-  padding: 1.6875rem 14.6875rem;
+  padding: 1.6875rem 2.5rem;
+  max-width: calc(1920px - 26rem);
 }
 main #projects .main .sub1 {
   width: 50%;
@@ -374,7 +383,8 @@ main #clients .head .line .two {
   background-color: #A9A9A9;
 }
 main #clients .main {
-  padding: 0 14.5625rem;
+  padding: 0 2.5rem;
+  max-width: calc(1920px - 26rem);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -386,9 +396,9 @@ main #clients .main img {
 }
 
 main #contact {
-  height: 200px;
   background-color: #BFDBFF;
-  margin: 4.6875rem 10rem;
+  margin: 4.68rem auto;
+  max-width: calc(1920px - 26rem);
   margin-bottom: 1.375rem;
   padding: 2.625rem 6.875rem;
   display: flex;

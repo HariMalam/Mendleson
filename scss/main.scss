@@ -58,33 +58,37 @@ header {
 }
 
 main {
+    padding: 1rem;
+
     #home {
-        justify-content: space-between;
+        justify-content: space-around;
         height: calc(100vh - 7rem);
         max-height: 800px;
         display: flex;
+        padding: 0 4rem;
 
         .img {
-            width: 40.1875rem;
-            margin-left: 10.6875rem;
+            width: 50%;
             height: auto;
             align-self: flex-end;
-            justify-self: end;
+
+            img {
+                max-width: 100%;
+            }
         }
 
         .content {
             margin-top: 10.0625rem;
-            margin-right: 16.4375rem;
 
             h1 {
-                width: 28.6875rem;
+                max-width: 28.6875rem;
                 font-size: 3.5rem;
                 font-weight: 500;
                 margin-bottom: 1.5625rem;
             }
 
             p {
-                width: 34rem;
+                max-width: 34rem;
                 font-size: 1.25rem;
                 margin-bottom: 1.875rem;
             }
@@ -105,3 +109,5 @@ footer {
     font-size: 0.875rem;
     font-weight: 400;
 }
+
+@import "responsive";
