@@ -23,12 +23,25 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
+    position: relative;
+    overflow: hidden;
+
+    .shape {
+        position: absolute;
+    }
+
+    .shape-2 {
+        top: 0;
+        right: 0;
+      }
+      
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 0.9375rem 8.125rem;
+    z-index: 1000;
 
     .logo {
         width: 18.4375rem;
@@ -47,6 +60,14 @@ header {
             li {
                 margin-right: 2.1875rem;
 
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                }
+
                 a {
                     font-size: 1.1rem;
                     text-decoration: none;
@@ -58,7 +79,6 @@ header {
 }
 
 main {
-    padding: 1rem;
 
     #home {
         justify-content: space-around;
@@ -66,11 +86,45 @@ main {
         max-height: 800px;
         display: flex;
         padding: 0 4rem;
+        position: relative;
+
+        .shape {
+            position: absolute;
+        }
+
+        .shape-3 {
+            bottom: 0;
+            right: 0;
+            
+        }
+
+        .shape-4 {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            img {
+                max-width: 80%;
+            }
+        }
+
+        .shape-5 {
+            bottom: 0;
+            left: 0;
+
+            height: 70%;
+
+            img {
+                max-height: 100%;
+            }
+            
+        }
 
         .img {
             width: 50%;
             height: auto;
             align-self: flex-end;
+            z-index: 1000;
 
             img {
                 max-width: 100%;

@@ -3,6 +3,26 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+
+        .shape {
+            position: absolute;
+        }
+
+        .shape-6 {
+            top: -7.5rem;
+            left: 0;
+        }
+
+        .shape-7 {
+            right: 0;
+            top: 10%;
+        }
+
+        .shape-8 {
+            right: 0;
+            bottom: 15%;
+        }
 
         .head {
             display: flex;
@@ -37,6 +57,7 @@ main {
 
         .main {
             margin: 50px auto;
+            z-index: 1000;
 
             .service {
                 display: flex;

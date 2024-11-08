@@ -4,6 +4,16 @@ main {
         flex-direction: column;
         align-items: center;
         margin-top: 11.375rem;
+        position: relative;
+
+        .shape {
+            position: absolute;
+        }
+
+        .shape-11 {
+            left: 0;
+            top : -5rem;
+        }
 
 
         .head {
@@ -44,6 +54,7 @@ main {
             display: flex;
             flex-wrap: wrap;  
             justify-content: space-between;
+            z-index: 1000;
 
             img {
             width: 14.5625rem;

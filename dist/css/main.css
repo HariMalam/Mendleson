@@ -22,12 +22,22 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.pages .shape {
+  position: absolute;
+}
+.pages .shape-2 {
+  top: 0;
+  right: 0;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 0.9375rem 8.125rem;
+  z-index: 1000;
 }
 header .logo {
   width: 18.4375rem;
@@ -45,26 +55,54 @@ header nav ul {
 header nav ul li {
   margin-right: 2.1875rem;
 }
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header nav ul li:hover {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
 header nav ul li a {
   font-size: 1.1rem;
   text-decoration: none;
   color: black;
 }
 
-main {
-  padding: 1rem;
-}
 main #home {
   justify-content: space-around;
   height: calc(100vh - 7rem);
   max-height: 800px;
   display: flex;
   padding: 0 4rem;
+  position: relative;
+}
+main #home .shape {
+  position: absolute;
+}
+main #home .shape-3 {
+  bottom: 0;
+  right: 0;
+}
+main #home .shape-4 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+main #home .shape-4 img {
+  max-width: 80%;
+}
+main #home .shape-5 {
+  bottom: 0;
+  left: 0;
+  height: 70%;
+}
+main #home .shape-5 img {
+  max-height: 100%;
 }
 main #home .img {
   width: 50%;
   height: auto;
   align-self: flex-end;
+  z-index: 1000;
 }
 main #home .img img {
   max-width: 100%;
@@ -172,6 +210,22 @@ main #services {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+main #services .shape {
+  position: absolute;
+}
+main #services .shape-6 {
+  top: -7.5rem;
+  left: 0;
+}
+main #services .shape-7 {
+  right: 0;
+  top: 10%;
+}
+main #services .shape-8 {
+  right: 0;
+  bottom: 15%;
 }
 main #services .head {
   display: flex;
@@ -201,6 +255,7 @@ main #services .head .line .two {
 }
 main #services .main {
   margin: 50px auto;
+  z-index: 1000;
 }
 main #services .main .service {
   display: flex;
@@ -244,6 +299,19 @@ main #team {
   flex-direction: column;
   align-items: center;
   margin-top: 10rem;
+  position: relative;
+  padding-bottom: 11.375rem;
+}
+main #team .shape {
+  position: absolute;
+}
+main #team .shape-9 {
+  left: 0;
+  top: -15rem;
+}
+main #team .shape-10 {
+  right: 0;
+  bottom: -8.3125rem;
 }
 main #team .head {
   display: flex;
@@ -296,7 +364,6 @@ main #projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 11.375rem;
 }
 main #projects .head {
   display: flex;
@@ -354,6 +421,14 @@ main #clients {
   flex-direction: column;
   align-items: center;
   margin-top: 11.375rem;
+  position: relative;
+}
+main #clients .shape {
+  position: absolute;
+}
+main #clients .shape-11 {
+  left: 0;
+  top: -5rem;
 }
 main #clients .head {
   display: flex;
@@ -388,6 +463,7 @@ main #clients .main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 1000;
 }
 main #clients .main img {
   width: 14.5625rem;
@@ -420,4 +496,10 @@ footer {
   padding: 1.375rem 0;
   font-size: 0.875rem;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    padding: 0.9375rem 2.125rem;
+  }
 }/*# sourceMappingURL=main.css.map */
