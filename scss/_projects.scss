@@ -1,0 +1,71 @@
+main {
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 11.375rem;
+
+
+        .head {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            
+            h1 {
+                font-size: 3.5rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+            
+            .line {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                .one {
+                    width: 100%;
+                    border: 1px solid #A9A9A9;
+                    border-radius: 4px;
+                }
+
+                .two {
+                    border-radius: 4px;
+                    width: 9.75rem;
+                    height: 0.4375rem;
+                    position: absolute;
+                    background-color: #A9A9A9;
+                }
+            }
+        }
+
+        .main {
+            display: flex;
+            padding: 1.6875rem 14.6875rem;
+
+            .sub1 {
+                width: 50%;
+                justify-content: center;
+
+                img {
+                    width: 100%;
+                    padding: 0 1.375rem;
+
+                }
+            }
+
+
+            .sub2 {
+                width: 50%;
+                padding: 0 1.375rem;
+                img {
+                    width: 100%;
+                    
+                    &:nth-child(1) {
+                        margin-bottom: 1.375rem;
+                    }
+                }
+
+            }
+        }
+    }
+}
