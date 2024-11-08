@@ -235,6 +235,7 @@ main #services .head {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  z-index: 1000;
 }
 main #services .head h1 {
   font-size: 3.5rem;
@@ -516,5 +517,40 @@ footer {
   }
   main #about .main .content {
     max-width: 50%;
+  }
+}
+@media only screen and (max-width: 924px) {
+  header {
+    padding: 0.9375rem 2.125rem;
+    flex-wrap: wrap;
+  }
+  main #home {
+    padding: 0 1rem;
+    justify-content: center;
+  }
+  main #home .content {
+    max-width: 50%;
+  }
+  main #home .content h1 {
+    font-size: 3rem;
+  }
+  main #about .head {
+    justify-content: center;
+  }
+  main #about .head .obj1 {
+    display: none;
+  }
+  main #about .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #about .main .img {
+    width: 100%;
+  }
+  main #about .main .content {
+    z-index: 1000;
+    max-width: 100%;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
