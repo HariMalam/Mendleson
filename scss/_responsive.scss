@@ -3,4 +3,22 @@
     header {
         padding: 0.9375rem 2.125rem;
     }
+
+    main {
+        #services {
+            .main {
+                .service {
+                    gap: 1rem;
+                }
+            }
+        }
+
+        #about {
+            .main {
+                .content {
+                    max-width: 50%;
+                }
+            }
+        }
+    }
 }

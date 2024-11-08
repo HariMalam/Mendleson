@@ -62,9 +62,10 @@ main {
             .service {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
                 padding: 0 2.5rem;
-                gap: 18rem;
+                margin: 2.5rem 0;
+                gap: 10rem;
 
                 &:nth-child(even) {
                     flex-direction: row-reverse;

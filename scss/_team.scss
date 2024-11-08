@@ -26,13 +26,13 @@ main {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            
+
             h1 {
                 font-size: 3.5rem;
                 font-weight: 500;
                 text-transform: uppercase;
             }
-            
+
             .line {
                 display: flex;
                 justify-content: center;
@@ -55,24 +55,27 @@ main {
         }
 
         .main {
-            display: flex;
-            justify-content: space-evenly;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.4rem;
             width: 100%;
-            padding: 1.93rem 0rem;  
+            padding: 1.93rem 0rem;
+            z-index: 1000;
 
             .member {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                
+
                 img {
-                    width: 17.375rem;
+                    max-width: 100%;
                     padding-bottom: 3.31rem;
                 }
 
                 p {
                     font-size: 1.5rem;
                     font-weight: 400;
+                    text-align: center;
                 }
             }
         }

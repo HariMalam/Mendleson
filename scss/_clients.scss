@@ -20,6 +20,7 @@ main {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            z-index: 1000;
             
             h1 {
                 font-size: 3.5rem;
@@ -57,7 +58,7 @@ main {
             z-index: 1000;
 
             img {
-            width: 14.5625rem;
+            max-width: 14.5625rem;
             margin: 2rem 1rem;
             max-width: 100%;
             }
