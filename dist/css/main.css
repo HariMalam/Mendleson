@@ -553,4 +553,85 @@ footer {
     max-width: 100%;
     width: 100%;
   }
+}
+@media only screen and (max-width: 786px) {
+  .shape {
+    display: none;
+  }
+  main #home {
+    flex-direction: row-reverse;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main #home img {
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    width: 50%;
+    opacity: 0.6;
+  }
+  main #home .content {
+    max-width: 100%;
+    width: 100%;
+  }
+  main #home .content h1 {
+    font-size: 2.5rem;
+  }
+  main #about .head .obj2 h1 {
+    font-size: 2.5rem;
+  }
+  main #services .head h1 {
+    font-size: 2.5rem;
+  }
+  main #services .main .service {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 1rem;
+  }
+  main #services .main .service .content {
+    max-width: 100% !important;
+    width: 100%;
+    text-align: left !important;
+  }
+  main #services .main .service .content h2 {
+    font-size: 2rem;
+  }
+  main #team .head h1 {
+    font-size: 2.5rem;
+  }
+  main #projects .head h1 {
+    font-size: 2.5rem;
+  }
+  main #projects .main {
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+  }
+  main #projects .main .sub1 {
+    width: 100%;
+  }
+  main #projects .main .sub2 {
+    width: 100%;
+  }
+  main #clients .head h1 {
+    font-size: 2.5rem;
+  }
+  main #clients .main img {
+    max-width: 10rem;
+  }
+  main #contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main #contact .section {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  main #contact .section:first-child {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
